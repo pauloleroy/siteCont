@@ -1,0 +1,33 @@
+.grid {
+	display: grid;
+	grid-template-columns: 50px auto;
+}
+#titulo {
+	font-family: Rockwell;
+	font-size: 18px;
+	text-align: center;
+	background-color: #c0e5ac;
+	color: #324428;
+	padding: 10px;
+	font-weight: Bold;
+}
+
+#icone {
+	background-color: #324428;
+	color: #c0e5ac;
+	padding: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+@media (min-width: 500px) {
+	#titulo::before {
+		content: "CONTABILIDADE SILVA & SILVA";
+		}
+}	
+
+@media (max-width: 499px) {
+	#titulo::before {
+		content: "SILVA & SILVA";
+	}
+}
