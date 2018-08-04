@@ -1,27 +1,55 @@
+.faleForm, .endereco, .gridContatos, .pNormal, #titulo {
+  background-color: #c0e5ac;
+  color: #324428;
+}
+
+.subtitulo, #icone {
+  background-color: #324428;
+  color: #c0e5ac;
+}
+
+#titulo {
+  font-family: Rockwell;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  font-weight: Bold;
+}
+
+#icone {
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
 .gridmenu {
   display: grid;
   grid-template-columns: 50px auto;
 }
 
+.subtitulo {
+  font-family: Calibri;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
 .pNormal {
   font-family: Calibri;
   font-size: 16px;
-  background-color: #c0e5ac;
-  color: #324428;
   padding: 5px;
 }
 
 .gridContatos {
-  display: grid;
+  display: flex;
   grid-template-columns: 200px auto;
   grid-column-gap: 10px;
   grid-row-gap: 30px;
   padding: 20px;
-  background-color: #c0e5ac;
+  flex-wrap: wrap;
 }
 
 .gridContatosItem {
-  background-color: #c0e5ac;
   font-size: 16px;
   font-family: Calibri;
   padding: 5px;
@@ -32,30 +60,37 @@
   font-weight: bold;
 }
 
-.subtitulo {
-  font-family: Calibri;
-  font-size: 18px;
-  font-weight: bold;
-  color: #c0e5ac;
+.endereco {
   padding: 10px;
-  background-color: #324428;
 }
 
-#titulo {
-  font-family: Rockwell;
-  font-size: 24px;
-  text-align: center;
-  background-color: #c0e5ac;
-  color: #324428;
+.faleForm {
   padding: 10px;
-  font-weight: Bold;
+  display: grid;
+  grid-row-gap: 10px;
 }
 
-#icone {
-  background-color: #324428;
-  color: #c0e5ac;
+.botao {
   padding: 10px;
-  font-size: 24px;
+  display: block;
+  width: 30px;
+  margin-Right: auto;
+  margin-left: auto;
+}
+
+#copyright {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+table th, table td {
+  border: 1px solid black;
+  padding: 5px;
   text-align: center;
 }
 
@@ -63,10 +98,18 @@
   #titulo::before {
     content: "CONTABILIDADE SILVA & SILVA";
   }
+
+  table {
+    width: 500px;
+  }
 }
 @media (max-width: 499px) {
   #titulo::before {
     content: "SILVA & SILVA";
+  }
+
+  table {
+    width: 100%;
   }
 }
 

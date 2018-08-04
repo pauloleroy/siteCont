@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contabilidade Carolina Leroy</title>
+	<title>Silva & Silva</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -10,18 +10,61 @@
 <body>
 	<div class= "gridmenu">
 		<div id="icone">
-			<span class="glyphicon glyphicon-th-list"></span>
+			<a href="#menu"><span class="glyphicon glyphicon-th-list"></span></a>
 		</div>
 		<div id="titulo"></div>		
 	</div>
 	<img src="imagem/office.jpg" width="100%">
-	<div class="subtitulo">SOBRE NOS:</div>
+	
+	<div class="subtitulo" id="menu">MENU:</div>
+	<div class="pNormal">
+		<ul>
+			<a href="#sobreNos"><li>SOBRE NOS</li></a>
+			<a href="#servicos"><li>SERVICOS E PRECOS</li></a>
+			<a href="#contatos"><li>CONTATOS</li></a>
+			<a href="#endereco"><li>ENDERECO</li></a>
+		</ul>	
+	</div>
+	<div class="subtitulo" id="sobreNos">SOBRE NOS:</div>
+	
 	<div  class="pNormal">
 		<p> Cur praemia crescit haustam vim ignotas. Ac ii quatenus reliquas sequutus incertas eo lectione odoratum. Ha infiniti earumdem ac funditus curandum ejusmodi converto. Dei quid quam huic sae fore nisi. Olim deus foco agi sine dura ullo tam. Suo dissimilem incrementi duo praevidere. Meo nullo ens talem dubio age novum aucta eam.</p> 
 
 		<p>Viam sumi mo id erit. Objectioni mo de necessario crediderim. Imo terra vox alios aut lor quasi. Vim quaero aut videri pendam plures duo. Extat neque arcte re ad etiam. Ego infiniti reperero mutuatur formalem sed scribere nec vel profecto.</p>
 	</div>
-	<div class="subtitulo"> CONTATOS: </div>
+	
+	<div class="subtitulo" id="servicos"> SERVICOS E PRECOS: </div>
+	<div class="pNormal">
+		<table>
+			<tr>
+				<th>SERVICO</th>
+				<th>HONORARIO</th>
+				<th>CONTATO</th>
+			</tr>
+			<tr>
+				<td>alios aut lor</td>
+				<td>R$100,00</td>
+				<td>Maria Silva</td>
+			</tr>
+			<tr>
+				<td>scribere nec </td>
+				<td>R$100,00</td>
+				<td>Maria Silva</td>
+			</tr>
+			<tr>
+				<td>Imo terra vox alios aut l</td>
+				<td>R$150,00</td>
+				<td>Juca Silva</td>
+			</tr>
+			<tr>
+				<td>praemia crescit</td>
+				<td>R$80,00</td>
+				<td>Juca Silva</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="subtitulo" id="contatos"> CONTATOS: </div>
 	<div class = "gridContatos">
 		<div class = "gridContatosItem">
 			<p class="nome"> Juca Silva </p>
@@ -34,12 +77,17 @@
 			<p class="email"> mariasilva@email.com </p>
 		</div>	
 	</div>
-	<div class="subtitulo"> ENDERECO: </div>
+	<div class="pNormal">Fale conosco: <a href="fale.html">silva&silva.com/faleconosco</a></div>
+	<div class="subtitulo" id="endereco"> ENDERECO: </div>
 	<div class = "endereco">
 		<div>Rua dos Presidentes 100, Sl 1003</div>
 		<div>Centro</div>
 		<div>12566-000</div>
 		<div>Manaus, AM</div>
+	</div>
+	
+	<div id="copyright">
+		&copy 2018 Silva & Silva. All rights reserved
 	</div>
 </body>
 </html>

@@ -1,72 +1,120 @@
-.gridmenu {
-	display: grid;
-	grid-template-columns: 50px auto;
-}
-
-.pNormal {
-	font-family: Calibri;
-	font-size: 16px;
+%fundoClaro {
 	background-color: #c0e5ac;
-	color: #324428;
-	padding: 5px;
+	color: #324428;	
 }
 
-.gridContatos {
-	display: grid;
-	grid-template-columns: 200px auto;
-	grid-column-gap: 10px;
-	grid-row-gap: 30px;
-	padding: 20px;
-	background-color: #c0e5ac;
-}
-
-.gridContatosItem {
-	background-color: #c0e5ac;
-	font-size: 16px;
-	font-family: Calibri;
-	padding:5px;
-	width: 180px;
-
-	.nome {
-		font-size: 18px;
-		font-weight: bold;
-	}
-}
-.subtitulo {
-	font-family: Calibri;
-	font-size: 18px;
-	font-weight: bold;
-	color: #c0e5ac;
-	padding: 10px;
+%fundoEscuro {
 	background-color: #324428;
+	color: #c0e5ac;	
 }
 
 #titulo {
 	font-family: Rockwell;
 	font-size: 24px;
 	text-align: center;
-	background-color: #c0e5ac;
-	color: #324428;
 	padding: 10px;
 	font-weight: Bold;
+	@extend %fundoClaro;
 }
 
 #icone {
-	background-color: #324428;
-	color: #c0e5ac;
 	padding: 10px;
 	font-size: 24px;
 	text-align: center;
+	@extend %fundoEscuro;
 }
 
+.gridmenu {
+	display: grid;
+	grid-template-columns: 50px auto;
+}
+
+.subtitulo {
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+	@extend %fundoEscuro;
+}
+
+.pNormal {
+	font-family: Calibri;
+	font-size: 16px;
+	padding: 5px;
+	@extend %fundoClaro;
+}
+
+.gridContatos {
+	display: flex;
+	grid-template-columns: 200px auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 30px;
+	padding: 20px;
+	@extend %fundoClaro;
+	flex-wrap: wrap;
+}
+
+.gridContatosItem {
+	font-size: 16px;
+	font-family: Calibri;
+	padding:5px;
+	width: 180px;
+	.nome {
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
+
+.endereco {
+	padding: 10px;
+	@extend %fundoClaro;
+}
+
+.faleForm {
+	@extend %fundoClaro;
+	padding: 10px;
+	display: grid;
+	grid-row-gap: 10px;
+}
+
+.botao {
+	padding: 10px;
+	display:block;
+	width: 30px;
+	margin-Right: auto;
+	margin-left: auto;
+}
+
+#copyright {
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+	
+	th, td {
+		border: 1px solid black;
+		padding: 5px;
+		text-align:center;
+	}
+}
 @media (min-width: 500px) {
 	#titulo::before {
 		content: "CONTABILIDADE SILVA & SILVA";
 		}
+	table {
+		width: 500px;
+	}
 }	
 
 @media (max-width: 499px) {
 	#titulo::before {
 		content: "SILVA & SILVA";
+	}
+	table {
+		width: 100%;
 	}
 }
